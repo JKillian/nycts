@@ -1,0 +1,27 @@
+{
+  "name": "nycts",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Jason Killian",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --open",
+    "build": "webpack --optimize-minimize"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "clean-webpack-plugin": "^0.1.16",
+    "csstips": "^0.2.2",
+    "csx": "^8.5.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "preact": "^8.2.5",
+    "typescript": "2.5.1",
+    "typestyle": "^1.3.8",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
