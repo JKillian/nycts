@@ -1,7 +1,7 @@
 import * as csx from "csx";
 import { h } from "preact";
 import { style } from "typestyle";
-import { Colors, fixedBar } from "./styleUtils";
+import { darkBgLink, fixedBar } from "./styleUtils";
 
 const footerCls = style(fixedBar, {
     fontSize: csx.px(12),
@@ -10,16 +10,7 @@ const footerCls = style(fixedBar, {
     alignItems: 'center',
 });
 
-const darkBgLink = style({
-    color: Colors.DARK_BG_TEXT.toHexString(),
-    textDecoration: "none",
-    $nest: {
-        '&:visited': { color: Colors.DARK_BG_TEXT.toHexString() },
-        '&:hover': { textDecoration: 'underline' },
-    },
-});
-
 export const Footer = () =>
     h('div', {class: footerCls},
-        h('a', {href: 'https://github.com', class: darkBgLink}, 'Site code on GitHub'),
+        h('a', {href: 'https://github.com', class: style(darkBgLink)}, 'Site code on GitHub'),
     );

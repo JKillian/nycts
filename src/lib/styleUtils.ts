@@ -16,3 +16,12 @@ export const fixedBar = {
     padding: csx.px(5),
     flex: '0 0 auto',
 };
+
+export const darkBgLink = {
+    color: Colors.DARK_BG_TEXT.toHexString(),
+    textDecoration: "none",
+    $nest: {
+        '&:visited': { color: Colors.DARK_BG_TEXT.toHexString() },
+        '&:hover': { textDecoration: 'underline' },
+    },
+};
